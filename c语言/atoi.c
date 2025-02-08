@@ -9,11 +9,20 @@ int main(){
     printf("%d",num);
 }
 int atoi(char s[]){
+    int sign;
     int sum=0;
     int i=0;
+    for(;s[i]==' '||s[i]=='\t';i++){
+        ;
+    }
+    if(s[i++]=='+'){
+        sign=1;
+    }else{
+        sign=-1;
+    }
     while(s[i]!='\0'){
         sum=sum*10+(s[i]-'0');
         i++;
     }
-    return sum;
+    return sum*sign;
 }
