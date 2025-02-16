@@ -48,3 +48,25 @@ struct point{
 };//size of struct point=20;
 ```
 
+6.链表
+
+```c
+在链表中插入一个新节点方法：
+(1)生成一个新节点：向内存分配器中申请一块内存，并将其赋值给一个指针p
+	p=(struct point *)malloc(sizeof(struct point));
+(2)填入必要的数据
+	p->number=0x33;
+(3)将p所指的节点插到链表头部
+    p->next=plist;
+删除链表中的节点方法：
+(1)找到前溯节点
+(2)删除节点
+(3)shi'fan
+```
+
+7.malloc函数
+
+```c
+malloc(sizeof())//注意该函数返回一个void* 类型的指针，可以转换为任意类型的指针，该指针指向shen'q
+```
+
