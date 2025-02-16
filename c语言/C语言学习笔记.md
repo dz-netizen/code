@@ -67,6 +67,6 @@ struct point{
 7.malloc函数
 
 ```c
-malloc(sizeof())//注意该函数返回一个void* 类型的指针，可以转换为任意类型的指针，该指针指向shen'q
+malloc(sizeof())//注意该函数返回一个void* 类型的指针，可以转换为任意类型的指针，该指针指向申请的特定空间
 ```
 
